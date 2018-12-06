@@ -108,6 +108,7 @@ apps=(
   pycharm
   toggl
   db-browser-for-sqlite
+  zzz
 )
 
 brew cask install --appdir="/Applications" ${apps[@]}
