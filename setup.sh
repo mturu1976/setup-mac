@@ -26,6 +26,7 @@ brew install wget
 brew install trash
 brew install mackup
 brew install node
+brew install nodenv
 
 echo "Cleaning up brew"
 brew cleanup
