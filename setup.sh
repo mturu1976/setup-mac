@@ -110,6 +110,7 @@ apps=(
   toggl
   db-browser-for-sqlite
   zzz
+  balenaetcher
 )
 
 brew cask install --appdir="/Applications" ${apps[@]}
