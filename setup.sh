@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $(uname) != "Darwin" ] ; then
-	echo "Macではありません…"
+	echo "Mac version setup.sh"
 	exit 1
 fi
 
@@ -12,8 +12,8 @@ brew update
 echo "Installing Git..."
 brew install git
 
-git config --global user.name "hidenori akiyama"
-git config --global user.email mturu1976@gmail.com
+git config --global user.name "Your name"
+git config --global user.email e-mail
 
 echo "Installing brew git utilities..."
 brew install git-extras
