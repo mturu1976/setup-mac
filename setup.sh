@@ -80,6 +80,7 @@ apps=(
   bartender
   bettertouchtool
 #  cleanmymac
+  coteditor # over 10.12.2
   colloquy
   cornerstone
 #  diffmerge
