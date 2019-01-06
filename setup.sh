@@ -79,23 +79,23 @@ apps=(
   alfred
   bartender
   bettertouchtool
-  cleanmymac
+#  cleanmymac
   colloquy
   cornerstone
-  diffmerge
+#  diffmerge
   dropbox
-  filezilla
+#  filezilla
   firefox
   google-chrome
   harvest
-  hipchat
+#  hipchat
   licecap
   phpstorm
   private-internet-access
   sourcetree
-  steam
+#  steam
   spotify
-  vagrant
+#  vagrant
   iterm2
   textexpander
   virtualbox
@@ -109,11 +109,13 @@ apps=(
   pycharm
   toggl
   db-browser-for-sqlite
-  zzz
+#  zzz
   balenaetcher
 )
 
-brew cask install --appdir="/Applications" ${apps[@]}
+#brew cask install --appdir="/Applications" ${apps[@]}
+
+brew cask install ${apps[@]}
 brew cask alfred link
 brew cleanup
 
