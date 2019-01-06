@@ -81,14 +81,14 @@ apps=(
   bettertouchtool
 #  cleanmymac
   coteditor # over 10.12.2
-  colloquy
-  cornerstone
+#  colloquy
+#  cornerstone
 #  diffmerge
   dropbox
 #  filezilla
   firefox
   google-chrome
-  harvest
+#  harvest
 #  hipchat
   licecap
   phpstorm
