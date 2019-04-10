@@ -78,6 +78,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 apps=(
   alfred
+  AppCleaner
   bartender
   bettertouchtool
 #  cleanmymac
@@ -94,6 +95,7 @@ apps=(
 #  harvest
 #  hipchat
 #  licecap
+  Kitematic
   phpstorm
   private-internet-access
   sourcetree
