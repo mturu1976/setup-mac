@@ -88,6 +88,7 @@ apps=(
 #  cornerstone
 #  diffmerge
   dropbox
+  db-browser-for-sqlite
 #  filezilla
   firefox
   google-chrome
