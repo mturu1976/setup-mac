@@ -82,6 +82,7 @@ apps=(
   bettertouchtool
 #  cleanmymac
   coteditor # over 10.12.2
+  chatwork
 #  colloquy
 #  cornerstone
 #  diffmerge
