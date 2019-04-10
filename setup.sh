@@ -27,6 +27,7 @@ brew install trash
 brew install mackup
 brew install node
 brew install nodenv
+brew install mycli
 
 echo "Cleaning up brew"
 brew cleanup
