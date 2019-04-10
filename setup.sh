@@ -99,6 +99,7 @@ apps=(
   Kitematic
   phpstorm
   private-internet-access
+  paparazzi
   sourcetree
 #  steam
   spotify
