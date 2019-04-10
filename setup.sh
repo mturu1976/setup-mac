@@ -88,6 +88,7 @@ apps=(
 #  filezilla
   firefox
   google-chrome
+  gitkraken
 #  harvest
 #  hipchat
   licecap
