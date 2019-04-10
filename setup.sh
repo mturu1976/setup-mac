@@ -91,7 +91,7 @@ apps=(
   gitkraken
 #  harvest
 #  hipchat
-  licecap
+#  licecap
   phpstorm
   private-internet-access
   sourcetree
@@ -99,7 +99,7 @@ apps=(
   spotify
 #  vagrant
   iterm2
-  textexpander
+#  textexpander
   virtualbox
   vlc
   skype
