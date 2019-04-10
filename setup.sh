@@ -105,6 +105,7 @@ apps=(
   virtualbox
   vlc
   skype
+  slack
   zoomus
   sequel-pro
   qlmarkdown
