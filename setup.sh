@@ -79,6 +79,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 apps=(
   alfred
   AppCleaner
+  balenetcher
   bartender
   bettertouchtool
 #  cleanmymac
