@@ -102,6 +102,7 @@ apps=(
   virtualbox
   vlc
   skype
+  station
   zoomus
   sequel-pro
   qlmarkdown
@@ -112,6 +113,7 @@ apps=(
   db-browser-for-sqlite
   zzz
   balenaetcher
+  Meld
 )
 
 brew cask install --appdir="/Applications" ${apps[@]}
