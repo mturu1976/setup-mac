@@ -89,6 +89,7 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 apps=(
+  airdroid
   adobe-creative-cloud
   appcleaner
   bettertouchtool
@@ -129,7 +130,6 @@ brew cleanup
 killall Finder
 qlmanage -r
 
-
 apps2=(
   405843582  #alfred
   585829637  #Todoist
@@ -151,6 +151,7 @@ apps2=(
   918858936  #airmail-4
   824171161 #affinity-designer
   1333542190  #1password-7-password-manager
+  967805235 #paste-clipboard-manager
 )
 
 mas install ${apps2[@]}
