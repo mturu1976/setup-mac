@@ -30,6 +30,8 @@ brew install mackup
 brew install node
 brew install nodenv
 brew install exa
+brew install bat
+brew install fd
 
 echo "Cleaning up brew"
 brew cleanup
@@ -69,6 +71,9 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 
 # デフォルトで隠しファイルを表示する
 defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# 共有フォルダで .DS_Store ファイルを作成しない
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
