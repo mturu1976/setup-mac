@@ -98,6 +98,7 @@ apps=(
   vagrant
   iterm2
   virtualbox
+  visual-studio-code
   vlc
   mu-editor
   slack
