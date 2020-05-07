@@ -32,6 +32,8 @@ brew install nodenv
 brew install exa
 brew install bat
 brew install fd
+brew install ripgrep
+brew install procs
 
 echo "Cleaning up brew"
 brew cleanup
