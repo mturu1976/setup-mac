@@ -117,6 +117,7 @@ apps=(
   suspicious-package
   todoist
   toggl
+  transmit
   Meld
   zoomus
 )
