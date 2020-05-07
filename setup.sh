@@ -81,7 +81,6 @@ apps=(
   bartender
   bettertouchtool
   cleanmymac
-  colloquy
   cornerstone
   diffmerge
   dropbox
