@@ -119,6 +119,7 @@ qlmanage -r
 
 
 apps2=(
+  405843582  #alfred
   585829637  #Todoist
   1278508951 #Trello
   539883307  #LINE
@@ -126,6 +127,18 @@ apps2=(
   409203825  #Numbers
   409201541  #Pages
   480452005  #QaLL
+  413857545  #divvy-window-manager
+  1362171212  #caffeinated-anti-sleep-app
+  904801687 #chronosync-express
+  508368068  #get-plain-text
+  445189367  #popclip
+  540404405  #dropshelf
+  405399194  #kindle
+  461788075  #movist
+  577085396  #unclutter
+  918858936  #airmail-4
+  824171161 #affinity-designer
+  1333542190  #1password-7-password-manager
 )
 
 mas install ${apps2[@]}
