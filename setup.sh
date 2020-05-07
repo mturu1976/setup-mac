@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ $(uname) != "Darwin" ] ; then
 	echo "Mac version setup.sh"
 	exit 1
@@ -21,6 +22,7 @@ brew install legit
 brew install git-flow
 
 echo "Installing other brew stuff..."
+brew install mas
 brew install tree
 brew install wget
 brew install trash
@@ -77,46 +79,53 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 apps=(
-  alfred
-  bartender
+  adobe-creative-cloud
+  appcleaner
   bettertouchtool
-  cleanmymac
-  cornerstone
-  diffmerge
+  balenaetcher
+  coteditor
+  docker
   dropbox
-  filezilla
+  db-browser-for-sqlite
   firefox
-  google-chrome
-  harvest
-  hipchat
-  licecap
-  phpstorm
-  private-internet-access
+ # google-chrome
+  gitkraken
+  qlmarkdown
+  qlstephen
+  vagrant
+  iterm2
+  virtualbox
+  vlc
+  mu-editor
+  slack
   sourcetree
   steam
   spotify
-  vagrant
-  iterm2
-  textexpander
-  virtualbox
-  vlc
   skype
-  station
-  zoomus
   sequel-pro
-  qlmarkdown
-  qlstephen
   suspicious-package
-  pycharm
+  todoist
   toggl
-  db-browser-for-sqlite
-  zzz
-  balenaetcher
   Meld
+  zoomus
 )
 
 brew cask install --appdir="/Applications" ${apps[@]}
-brew cask alfred link
+#brew cask alfred link
 brew cleanup
 
 killall Finder
+qlmanage -r
+
+
+apps2=(
+  585829637  #Todoist
+  1278508951 #Trello
+  539883307  #LINE
+  409183694  #keynote
+  409203825  #Numbers
+  409201541  #Pages
+  480452005  #QaLL
+)
+
+mas install ${apps2[@]}
