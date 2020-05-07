@@ -52,6 +52,9 @@ $ sudo pmset -a standbydelay 86400
 # スクロールバーの常時表示
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
+# マウススピード変更
+defaults write "Apple Global Domain" com.apple.mouse.scaling 3.6
+
 # 自動大文字の無効化
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
