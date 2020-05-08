@@ -55,6 +55,10 @@ brew install zsh --ignore-dependencies
 brew install ncurses
 sudo chsh -s /bin/zsh
 
+#starship
+brew install starship
+
+
 echo "Cleaning up brew"
 brew cleanup
 
@@ -114,6 +118,7 @@ apps=(
   bettertouchtool
   balenaetcher
   coteditor
+  deepl
   docker
   dropbox
   db-browser-for-sqlite
