@@ -58,7 +58,6 @@ sudo chsh -s /bin/zsh
 #starship
 brew install starship
 
-
 echo "Cleaning up brew"
 brew cleanup
 
@@ -179,3 +178,7 @@ apps2=(
 )
 
 mas install ${apps2[@]}
+
+#python
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
