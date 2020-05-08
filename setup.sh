@@ -35,6 +35,11 @@ brew install fd
 brew install ripgrep
 brew install procs
 
+# Font
+brew tap sanemat/font
+brew install ricty
+cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
 echo "Cleaning up brew"
 brew cleanup
 
