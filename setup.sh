@@ -40,9 +40,14 @@ brew tap sanemat/font
 brew install ricty
 cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
+
+# zsh
+brew install zsh --ignore-dependencies
+brew install ncurses
+sudo chsh -s /bin/zsh
+
 echo "Cleaning up brew"
 brew cleanup
-
 
 #"Removing useless icons from Safari's bookmarks bar"
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
