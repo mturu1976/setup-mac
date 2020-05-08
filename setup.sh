@@ -36,9 +36,18 @@ brew install ripgrep
 brew install procs
 
 # Font
+# Ricty
 brew tap sanemat/font
 brew install ricty
 cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
+
+# Source Han Code JP
+brew tap homebrew/cask-fonts
+brew cask install font-source-han-code-jp
+
+# HackGen
+brew cask install font-hackgen
+
 fc-cache -vf
 
 # zsh
