@@ -176,6 +176,7 @@ apps2=(
   1333542190  #1password-7-password-manager
   967805235 #paste-clipboard-manager
   1225570693 #Ulysses
+  1462633284 #perculia
 )
 
 mas install ${apps2[@]}
