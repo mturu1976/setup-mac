@@ -34,6 +34,7 @@ brew install bat
 brew install fd
 brew install ripgrep
 brew install procs
+brew install pastel
 
 # Font
 # Ricty
@@ -138,6 +139,7 @@ apps=(
   visual-studio-code
   vlc
   mu-editor
+  openinterminal-lite
   slack
   sourcetree
   steam
