@@ -99,6 +99,9 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # 共有フォルダで .DS_Store ファイルを作成しない
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+# USB上で .DS_Store ファイルを作成しない
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
 
