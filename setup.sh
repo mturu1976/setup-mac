@@ -175,6 +175,7 @@ apps2=(
   824171161 #affinity-designer
   1333542190  #1password-7-password-manager
   967805235 #paste-clipboard-manager
+  1225570693 #Ulysses
 )
 
 mas install ${apps2[@]}
