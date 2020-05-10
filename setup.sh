@@ -113,6 +113,9 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 # ゴミ箱を空にする前の警告の無効化
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# スクリーンショットのファイル名を変更
+defaults write com.apple.screencapture name Screenshot
+
 apps=(
   airdroid
   adobe-creative-cloud
