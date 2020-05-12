@@ -118,6 +118,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.screencapture name Screenshot
 
 apps=(
+  alfred
   airdroid
   adobe-creative-cloud
   appcleaner
@@ -162,7 +163,7 @@ killall Finder
 qlmanage -r
 
 apps2=(
-  405843582  #alfred
+#   405843582  #alfred
   585829637  #Todoist
   1278508951 #Trello
   539883307  #LINE
