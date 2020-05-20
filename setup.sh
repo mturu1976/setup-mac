@@ -35,6 +35,7 @@ brew install fd
 brew install ripgrep
 brew install procs
 brew install pastel
+brew install aria2
 
 # Font
 # Ricty
