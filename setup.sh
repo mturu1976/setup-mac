@@ -126,6 +126,7 @@ apps=(
   bettertouchtool
   balenaetcher
   coteditor
+  chatwork
   deepl
   docker
   dropbox
