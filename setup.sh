@@ -47,6 +47,10 @@ cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 brew tap homebrew/cask-fonts
 brew cask install font-source-han-code-jp
 
+
+# Driver
+brew tap homebrew/cask-drivers
+
 # HackGen
 brew cask install font-hackgen
 
@@ -138,6 +142,7 @@ apps=(
   qlstephen
   vagrant
   iterm2
+  logitech-gaming-software
   virtualbox
   visual-studio-code
   vlc
