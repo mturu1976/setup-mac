@@ -195,6 +195,7 @@ apps2=(
   1225570693 #Ulysses
   1462633284 #perculia
   1452453066 #hidden-bar
+  467040476 #HiddenMe
 )
 
 mas install ${apps2[@]}
