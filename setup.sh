@@ -159,7 +159,7 @@ apps=(
   todoist
   toggl
   transmit
-  Meld
+  #Meld
   zoomus
 )
 
