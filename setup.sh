@@ -30,10 +30,46 @@ brew install mackup
 brew install node
 brew install nodenv
 brew install exa
+brew install bat
+brew install fd
+brew install ripgrep
+brew install procs
+brew install pastel
+brew install aria2
+brew install git-ftp
+brew install ncdu
+brew install Byobu
+brew install glow
+
+# Font
+# Ricty
+brew tap sanemat/font
+brew install ricty
+cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
+
+# Source Han Code JP
+brew tap homebrew/cask-fonts
+brew cask install font-source-han-code-jp
+
+
+# Driver
+brew tap homebrew/cask-drivers
+
+# HackGen
+brew cask install font-hackgen
+
+fc-cache -vf
+
+# zsh
+brew install zsh --ignore-dependencies
+brew install ncurses
+sudo chsh -s /bin/zsh
+
+#starship
+brew install starship
 
 echo "Cleaning up brew"
 brew cleanup
-
 
 #"Removing useless icons from Safari's bookmarks bar"
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
@@ -70,6 +106,12 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # デフォルトで隠しファイルを表示する
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
+# 共有フォルダで .DS_Store ファイルを作成しない
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# USB上で .DS_Store ファイルを作成しない
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
 
@@ -81,12 +123,19 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 # ゴミ箱を空にする前の警告の無効化
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# スクリーンショットのファイル名を変更
+defaults write com.apple.screencapture name Screenshot
+
 apps=(
+  alfred
+  airdroid
   adobe-creative-cloud
   appcleaner
   bettertouchtool
   balenaetcher
   coteditor
+  chatwork
+  deepl
   docker
   dropbox
   db-browser-for-sqlite
@@ -97,10 +146,12 @@ apps=(
   qlstephen
   vagrant
   iterm2
+  logitech-gaming-software
   virtualbox
   visual-studio-code
   vlc
   mu-editor
+  openinterminal-lite
   slack
   sourcetree
   steam
@@ -110,7 +161,8 @@ apps=(
   suspicious-package
   todoist
   toggl
-  Meld
+  transmit
+  #Meld
   zoomus
 )
 
@@ -121,9 +173,8 @@ brew cleanup
 killall Finder
 qlmanage -r
 
-
 apps2=(
-  405843582  #alfred
+#   405843582  #alfred
   585829637  #Todoist
   1278508951 #Trello
   539883307  #LINE
@@ -143,6 +194,15 @@ apps2=(
   918858936  #airmail-4
   824171161 #affinity-designer
   1333542190  #1password-7-password-manager
+ # 967805235 #paste-clipboard-manager
+  1225570693 #Ulysses
+  1462633284 #perculia
+  1452453066 #hidden-bar
+  467040476 #HiddenMe
 )
 
 mas install ${apps2[@]}
+
+#python
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
