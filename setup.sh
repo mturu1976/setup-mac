@@ -39,6 +39,7 @@ brew install aria2
 brew install git-ftp
 brew install ncdu
 brew install Byobu
+brew install glow
 
 # Font
 # Ricty
