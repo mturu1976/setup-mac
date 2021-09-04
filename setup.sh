@@ -172,6 +172,7 @@ apps=(
   todoist
   toggl
   transmit
+  realforce
   # Meld
   # zoomus
 )
