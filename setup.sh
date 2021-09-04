@@ -136,8 +136,8 @@ defaults write com.apple.screencapture name Screenshot
 
 apps=(
   alfred
-  airdroid
-  adobe-creative-cloud
+  # airdroid
+  # adobe-creative-cloud
   appcleaner
   bettertouchtool
   balenaetcher
@@ -152,26 +152,26 @@ apps=(
   gitkraken
   qlmarkdown
   qlstephen
-  vagrant
+  #vagrant
   iterm2
   logitech-gaming-software
-  virtualbox
+  #virtualbox
   visual-studio-code
   vlc
   mu-editor
   openinterminal-lite
   slack
-  sourcetree
-  steam
+  # sourcetree
+  # steam
   spotify
-  skype
+  #skype
   sequel-pro
   suspicious-package
   todoist
   toggl
   transmit
-  #Meld
-  zoomus
+  # Meld
+  # zoomus
 )
 brew install --cask ${apps[@]}
 #brew cask install --appdir="/Applications" ${apps[@]}
