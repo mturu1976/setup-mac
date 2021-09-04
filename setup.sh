@@ -41,6 +41,8 @@ brew install git-ftp
 brew install ncdu
 brew install Byobu
 brew install glow
+brew install zoxide
+brew install hstr
 
 # Font
 # Ricty
