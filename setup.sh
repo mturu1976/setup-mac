@@ -152,8 +152,8 @@ apps=(
   firefox
  # google-chrome
   gitkraken
-  qlmarkdown
-  qlstephen
+ # qlmarkdown
+ # qlstephen
   #vagrant
   iterm2
   logitech-gaming-software
