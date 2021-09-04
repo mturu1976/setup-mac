@@ -173,8 +173,8 @@ apps=(
   #Meld
   zoomus
 )
-
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask ${apps[@]}
+#brew cask install --appdir="/Applications" ${apps[@]}
 #brew cask alfred link
 brew cleanup
 
