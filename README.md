@@ -2,9 +2,13 @@
 macOS Big Sur用のセットアップ用
 MacBook pro 13-inch 2018
 
-Homebrew
+Homebrew install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-AAaaa
+install
+```
+chmod +x setup.sh
+./setup.sh
+```
