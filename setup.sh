@@ -135,10 +135,12 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.screencapture name Screenshot
 
 apps=(
+  atok
   alfred
   # airdroid
   # adobe-creative-cloud
   appcleaner
+  brave-browser
   bettertouchtool
   balenaetcher
   coteditor
