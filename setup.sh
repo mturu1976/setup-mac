@@ -152,7 +152,7 @@ apps=(
   dropbox
   db-browser-for-sqlite
   firefox
- # google-chrome
+  google-chrome
   gitkraken
  # qlmarkdown
  # qlstephen
@@ -167,6 +167,7 @@ apps=(
   slack
   # sourcetree
   # steam
+  skitch
   spotify
   #skype
   sequel-pro
