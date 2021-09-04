@@ -116,6 +116,13 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
 
+# スマート引用符とスマートダッシュを使用のチェックを外す
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable smart quotes for TextEdit
+defaults write com.apple.TextEdit SmartQuotes -bool false
+
 # ディスク検証を無効化
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
