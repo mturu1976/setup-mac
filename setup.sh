@@ -22,6 +22,7 @@ brew install legit
 brew install git-flow
 
 echo "Installing other brew stuff..."
+brew install autojump
 brew install mas
 brew install tree
 brew install wget
@@ -40,6 +41,8 @@ brew install git-ftp
 brew install ncdu
 brew install Byobu
 brew install glow
+brew install zoxide
+brew install hstr
 
 # Font
 # Ricty
@@ -115,6 +118,13 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
 
+# スマート引用符とスマートダッシュを使用のチェックを外す
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable smart quotes for TextEdit
+defaults write com.apple.TextEdit SmartQuotes -bool false
+
 # ディスク検証を無効化
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
@@ -127,10 +137,12 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.screencapture name Screenshot
 
 apps=(
+  atok
   alfred
-  airdroid
-  adobe-creative-cloud
+  # airdroid
+  # adobe-creative-cloud
   appcleaner
+  brave-browser
   bettertouchtool
   balenaetcher
   coteditor
@@ -140,33 +152,35 @@ apps=(
   dropbox
   db-browser-for-sqlite
   firefox
- # google-chrome
+  google-chrome
   gitkraken
-  qlmarkdown
-  qlstephen
-  vagrant
+ # qlmarkdown
+ # qlstephen
+  #vagrant
   iterm2
   logitech-gaming-software
-  virtualbox
+  #virtualbox
   visual-studio-code
   vlc
   mu-editor
   openinterminal-lite
   slack
-  sourcetree
-  steam
+  # sourcetree
+  # steam
+  skitch
   spotify
-  skype
+  #skype
   sequel-pro
   suspicious-package
   todoist
   toggl
   transmit
-  #Meld
-  zoomus
+  realforce
+  # Meld
+  # zoomus
 )
-
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask ${apps[@]}
+#brew cask install --appdir="/Applications" ${apps[@]}
 #brew cask alfred link
 brew cleanup
 
