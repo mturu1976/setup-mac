@@ -158,6 +158,7 @@ apps=(
  # qlstephen
   #vagrant
   iterm2
+  kite
   logitech-gaming-software
   #virtualbox
   visual-studio-code
@@ -181,8 +182,6 @@ apps=(
   # zoomus
 )
 brew install --cask ${apps[@]}
-#brew cask install --appdir="/Applications" ${apps[@]}
-#brew cask alfred link
 brew cleanup
 
 killall Finder
