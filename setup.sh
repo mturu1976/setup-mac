@@ -164,6 +164,7 @@ apps=(
   vlc
   mu-editor
   openinterminal-lite
+  pcloud
   slack
   # sourcetree
   # steam
