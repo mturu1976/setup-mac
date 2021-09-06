@@ -214,7 +214,7 @@ apps2=(
   1333542190  #1password-7-password-manager
  # 967805235 #paste-clipboard-manager
   1225570693 #Ulysses
-  1462633284 #perculia
+  # 1462633284 #perculia
   1452453066 #hidden-bar
   467040476 #HiddenMe
 )
