@@ -44,6 +44,10 @@ brew install glow
 brew install zoxide
 brew install hstr
 
+#python
+brew install pyenv
+brew install pyenv-virtualenv
+
 # Font
 # Ricty
 brew tap sanemat/font
@@ -216,7 +220,3 @@ apps2=(
 )
 
 mas install ${apps2[@]}
-
-#python
-git clone git://github.com/yyuu/pyenv.git ~/.pyenv
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
