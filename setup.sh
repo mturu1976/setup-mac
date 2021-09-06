@@ -163,6 +163,7 @@ apps=(
   #vagrant
   iterm2
   kite
+  local
   logitech-gaming-software
   #virtualbox
   visual-studio-code
