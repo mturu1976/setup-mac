@@ -45,6 +45,10 @@ brew install glow
 brew install zoxide
 brew install hstr
 
+# ytop
+brew tap cjbassi/ytop
+brew install ytop
+
 #python
 brew install pyenv
 brew install pyenv-virtualenv
