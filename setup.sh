@@ -23,6 +23,7 @@ brew install git-flow
 
 echo "Installing other brew stuff..."
 brew install autojump
+brew install Discord
 brew install mas
 brew install tree
 brew install wget
