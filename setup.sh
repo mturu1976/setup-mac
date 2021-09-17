@@ -25,6 +25,7 @@ echo "Installing other brew stuff..."
 brew install autojump
 brew install duf
 brew install Discord
+brew install direnv
 brew install mas
 brew install tree
 brew install wget
