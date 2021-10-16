@@ -64,14 +64,16 @@ cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 
 # Source Han Code JP
 brew tap homebrew/cask-fonts
-brew cask install font-source-han-code-jp
+brew install --cask font-source-han-code-jp
 
+# nerdfont
+brew install --cask font-hack-nerd-font
 
 # Driver
 brew tap homebrew/cask-drivers
 
 # HackGen
-brew cask install font-hackgen
+brew install --cask font-hackgen
 
 fc-cache -vf
 
