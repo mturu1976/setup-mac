@@ -41,6 +41,7 @@ brew install procs
 brew install pastel
 brew install aria2
 brew install git-ftp
+brew install gh
 brew install gibo
 brew install ncdu
 brew install Byobu
