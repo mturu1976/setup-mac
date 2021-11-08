@@ -23,6 +23,9 @@ brew install git-flow
 
 echo "Installing other brew stuff..."
 brew install autojump
+brew install duf
+brew install Discord
+brew install direnv
 brew install mas
 brew install tree
 brew install wget
@@ -38,12 +41,17 @@ brew install procs
 brew install pastel
 brew install aria2
 brew install git-ftp
+brew install gh
 brew install gibo
 brew install ncdu
 brew install Byobu
 brew install glow
 brew install zoxide
 brew install hstr
+
+# ytop
+brew tap cjbassi/ytop
+brew install ytop
 
 #python
 brew install pyenv
@@ -57,14 +65,16 @@ cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 
 # Source Han Code JP
 brew tap homebrew/cask-fonts
-brew cask install font-source-han-code-jp
+brew install --cask font-source-han-code-jp
 
+# nerdfont
+brew install --cask font-hack-nerd-font
 
 # Driver
 brew tap homebrew/cask-drivers
 
 # HackGen
-brew cask install font-hackgen
+brew install --cask font-hackgen
 
 fc-cache -vf
 
@@ -215,7 +225,7 @@ apps2=(
   824171161 #affinity-designer
   1333542190  #1password-7-password-manager
  # 967805235 #paste-clipboard-manager
-  1225570693 #Ulysses
+ # 1225570693 #Ulysses
   # 1462633284 #perculia
   1452453066 #hidden-bar
   467040476 #HiddenMe
