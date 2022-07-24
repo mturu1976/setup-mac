@@ -76,6 +76,9 @@ brew tap homebrew/cask-drivers
 # HackGen
 brew install --cask font-hackgen
 
+# OpenInTerminal lite
+brew install --cask openinterminal-lite
+
 fc-cache -vf
 
 # zsh
@@ -180,7 +183,6 @@ apps=(
   visual-studio-code
   vlc
   mu-editor
-  openinterminal-lite
   pcloud
   slack
   # sourcetree
