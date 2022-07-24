@@ -232,6 +232,9 @@ apps2=(
   1452453066 #hidden-bar
   467040476 #HiddenMe
   1475387142 #Tailscale
+  430798174 #HazeOver
+  1575557335 #Kaleidoscope3
+  1444383602 #GoodNotes 5
 )
 
 mas install ${apps2[@]}
