@@ -231,6 +231,7 @@ apps2=(
   # 1462633284 #perculia
   1452453066 #hidden-bar
   467040476 #HiddenMe
+  1475387142 #Tailscale
 )
 
 mas install ${apps2[@]}
