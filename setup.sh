@@ -48,6 +48,7 @@ brew install Byobu
 brew install glow
 brew install zoxide
 brew install hstr
+brew install neofetch
 
 # ytop
 brew tap cjbassi/ytop
