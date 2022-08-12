@@ -69,6 +69,8 @@ brew install --cask font-source-han-code-jp
 
 # nerdfont
 brew install --cask font-hack-nerd-font
+brew install --cask font-space-mono-nerd-font
+brew install --cask font-mononoki-nerd-font
 
 # Driver
 brew tap homebrew/cask-drivers
