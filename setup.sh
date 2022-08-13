@@ -90,6 +90,7 @@ fc-cache -vf
 brew install zsh --ignore-dependencies
 brew install ncurses
 sudo chsh -s /bin/zsh
+brew install zsh-completions
 
 #starship
 brew install starship
