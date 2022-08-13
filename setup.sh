@@ -51,6 +51,7 @@ brew install glow
 brew install zoxide
 brew install hstr
 brew install neofetch
+brww install delta
 
 # ytop
 brew tap cjbassi/ytop
