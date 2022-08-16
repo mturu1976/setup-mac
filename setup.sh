@@ -25,33 +25,36 @@ brew install git-flow
 
 echo "Installing other brew stuff..."
 brew install autojump
-brew install duf
-brew install Discord
-brew install direnv
-brew install mas
-brew install tree
-brew install wget
-brew install trash
-brew install mackup
-brew install node
-brew install nodenv
-brew install exa
-brew install bat
-brew install fd
-brew install ripgrep
-brew install procs
-brew install pastel
 brew install aria2
+brew install bat
+brew install Byobu
+brew install duf
+brew install direnv
+brww install delta
+brew install Discord
+brew install exa
+brew install fd
 brew install git-ftp
 brew install gh
 brew install gibo
-brew install ncdu
-brew install Byobu
 brew install glow
-brew install zoxide
 brew install hstr
+brew install mas
+brew install mackup
+brew install node
+brew install nodenv
+brew install ncdu
 brew install neofetch
-brww install delta
+brew install procs
+brew install pastel
+brew install ripgrep
+brew install tree
+brew install trash
+brew install wget
+brew install zoxide
+
+#unrar
+brew install carlocab/personal/unrar
 
 # ytop
 brew tap cjbassi/ytop
@@ -76,11 +79,11 @@ brew install --cask font-hack-nerd-font
 brew install --cask font-space-mono-nerd-font
 brew install --cask font-mononoki-nerd-font
 
+# HackGenfont
+brew install --cask font-hackgen
+
 # Driver
 brew tap homebrew/cask-drivers
-
-# HackGen
-brew install --cask font-hackgen
 
 # OpenInTerminal lite
 brew install --cask openinterminal-lite
@@ -191,6 +194,7 @@ apps=(
   vlc
   mu-editor
   pcloud
+  obsidian
   slack
   # sourcetree
   # steam
