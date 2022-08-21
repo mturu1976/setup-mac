@@ -43,6 +43,7 @@ brew install go
 brew install hstr
 brew install mas
 brew install mackup
+brew install neovim
 brew install node
 brew install nodenv
 brew install ncdu
