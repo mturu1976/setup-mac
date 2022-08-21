@@ -55,6 +55,7 @@ brew install tree
 brew install trash
 brew install wget
 brew install zoxide
+brew install zplug
 
 #unrar
 brew install carlocab/personal/unrar
