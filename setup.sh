@@ -186,6 +186,7 @@ apps=(
   firefox
   google-chrome
   gitkraken
+  gitup
  # qlmarkdown
  # qlstephen
   #vagrant
