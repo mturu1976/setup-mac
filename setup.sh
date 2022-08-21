@@ -34,10 +34,12 @@ brww install delta
 brew install Discord
 brew install exa
 brew install fd
+brew install ffmpeg
 brew install git-ftp
 brew install gh
 brew install gibo
 brew install glow
+brew install go
 brew install hstr
 brew install mas
 brew install mackup
