@@ -53,6 +53,7 @@ brew install pastel
 brew install ripgrep
 brew install tree
 brew install trash
+brew install youtube-dl
 brew install wget
 brew install zoxide
 brew install zplug
