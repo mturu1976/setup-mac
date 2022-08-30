@@ -28,6 +28,7 @@ brew install autojump
 brew install aria2
 brew install bat
 brew install Byobu
+brew install breaktimer
 brew install duf
 brew install direnv
 brww install delta
@@ -48,8 +49,9 @@ brew install node
 brew install nodenv
 brew install ncdu
 brew install neofetch
-brew install procs
 brew install pastel
+brew install procs
+brew install pipes-sh
 brew install ripgrep
 brew install tree
 brew install trash
