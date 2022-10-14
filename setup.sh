@@ -44,6 +44,7 @@ brew install go
 brew install hstr
 brew install mas
 brew install mackup
+brew install muffet
 brew install neovim
 brew install node
 brew install nodenv
