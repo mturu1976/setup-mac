@@ -207,7 +207,7 @@ apps=(
   # sourcetree
   # steam
   skitch
-  spotify
+  # spotify
   #skype
   sequel-pro
   suspicious-package
