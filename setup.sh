@@ -38,6 +38,7 @@ brew install fd
 brew install ffmpeg
 brew install git-ftp
 brew install gh
+brew install ghq
 brew install gibo
 brew install glow
 brew install go
@@ -50,6 +51,7 @@ brew install node
 brew install nodenv
 brew install ncdu
 brew install neofetch
+brew install peco
 brew install pastel
 brew install procs
 brew install pipes-sh
