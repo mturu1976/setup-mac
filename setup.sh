@@ -98,6 +98,9 @@ brew tap homebrew/cask-drivers
 # OpenInTerminal lite
 brew install --cask openinterminal-lite
 
+# 個別に音量調整: BackgroundMusic
+brew install --cask background-music
+
 fc-cache -vf
 
 # zsh
