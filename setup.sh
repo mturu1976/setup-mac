@@ -201,9 +201,9 @@ apps=(
  # qlstephen
   #vagrant
   iterm2
-  kite
+  # kite
   local
-  logitech-gaming-software
+  # logitech-gaming-software
   #virtualbox
   visual-studio-code
   vlc
