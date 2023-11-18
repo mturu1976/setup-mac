@@ -56,6 +56,7 @@ brew install pastel
 brew install procs
 brew install pipes-sh
 brew install ripgrep
+brew install tailspin
 brew install tree
 brew install trash
 brew install youtube-dl
