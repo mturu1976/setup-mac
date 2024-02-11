@@ -44,7 +44,7 @@ brew install git-flow
 echo "Installing other brew stuff..."
 
 # Install other Homebrew packages
-for pkg in autojump aria2 bat Byobu breaktimer duf direnv Discord eza fd ffmpeg git-ftp gh ghq gibo glow go hstr mas mackup muffet neovim node nodenv ncdu neofetch peco pastel procs pipes-sh ripgrep tailspin tree trash youtube-dl wget zoxide zplug unrar pyenv pyenv-virtualenv starship zsh zsh-completions; do
+for pkg in autojump aria2 bat Byobu breaktimer duf direnv Discord eza fd ffmpeg git-ftp gh ghq gibo glow go hstr mas mackup muffet neovim node nodenv ncdu neofetch peco pastel procs pipes-sh ripgrep tailspin tig tree trash youtube-dl wget zoxide zplug unrar pyenv pyenv-virtualenv starship zsh zsh-completions; do
     install_brew_package "$pkg"
 done
 
