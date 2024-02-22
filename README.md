@@ -1,13 +1,15 @@
 # setup-mac
-macOS Big Sur用のセットアップ用
-MacBook pro 13-inch 2018
+macOS Ventura用のセットアップ
 
-Homebrew install
+使用機器
+MacBook pro 13-inch M2
+
+## Homebrew install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-install
+## install
 ```
 chmod +x setup.sh
 ./setup.sh
