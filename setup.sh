@@ -1,18 +1,38 @@
 #!/bin/bash
 
-
+# Check if the operating system is macOS
 if [ $(uname) != "Darwin" ] ; then
-	echo "Mac version setup.sh"
+	echo "This setup script is intended for Mac only."
 	exit 1
 fi
 
-# Update homebrew recipes
+# Function to install a Homebrew package
+install_brew_package() {
+    echo "Installing $1..."
+    brew install "$1"
+}
+
+# Function to install a Homebrew cask package
+install_brew_cask() {
+    echo "Installing $1..."
+    brew install --cask "$1"
+}
+
+# Function to install a MAS package
+install_mas_package() {
+    echo "Installing $1..."
+    mas install "$1"
+}
+
+# Creating a file to silence the login message
+touch $HOME/.hushlogin
+
+# Homebrew updates and installations
 echo "Updating homebrew..."
 brew update
 
-echo "Installing Git..."
-brew install git
-
+# Git installation and configuration
+install_brew_package git
 git config --global user.name "Your name"
 git config --global user.email e-mail
 
@@ -22,32 +42,14 @@ brew install legit
 brew install git-flow
 
 echo "Installing other brew stuff..."
-brew install autojump
-brew install duf
-brew install Discord
-brew install direnv
-brew install mas
-brew install tree
-brew install wget
-brew install trash
-brew install mackup
-brew install node
-brew install nodenv
-brew install exa
-brew install bat
-brew install fd
-brew install ripgrep
-brew install procs
-brew install pastel
-brew install aria2
-brew install git-ftp
-brew install gh
-brew install gibo
-brew install ncdu
-brew install Byobu
-brew install glow
-brew install zoxide
-brew install hstr
+
+# Install other Homebrew packages
+for pkg in autojump aria2 bat Byobu breaktimer duf direnv Discord eza fd ffmpeg git-ftp gh ghq gibo glow go hstr mas mackup muffet neovim node nodenv ncdu neofetch peco pastel procs pipes-sh ripgrep tailspin tig tldr tree trash youtube-dl wget zoxide zplug unrar pyenv pyenv-virtualenv starship zsh zsh-completions; do
+    install_brew_package "$pkg"
+done
+
+#unrar
+brew install carlocab/personal/unrar
 
 # ytop
 brew tap cjbassi/ytop
@@ -65,16 +67,19 @@ cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 
 # Source Han Code JP
 brew tap homebrew/cask-fonts
-brew install --cask font-source-han-code-jp
+brew install font-hackgen
 
 # nerdfont
-brew install --cask font-hack-nerd-font
+brew install font-hackgen-nerd
 
 # Driver
 brew tap homebrew/cask-drivers
 
-# HackGen
-brew install --cask font-hackgen
+# OpenInTerminal lite
+brew install --cask openinterminal-lite
+
+# 個別に音量調整: BackgroundMusic
+brew install --cask background-music
 
 fc-cache -vf
 
@@ -82,6 +87,7 @@ fc-cache -vf
 brew install zsh --ignore-dependencies
 brew install ncurses
 sudo chsh -s /bin/zsh
+brew install zsh-completions
 
 #starship
 brew install starship
@@ -89,8 +95,50 @@ brew install starship
 echo "Cleaning up brew"
 brew cleanup
 
+
 #"Removing useless icons from Safari's bookmarks bar"
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+apps=(
+  appcleaner
+  brave-browser
+  bettertouchtool
+  balenaetcher
+  coteditor
+  chatwork
+  deepl
+  docker
+  dropbox
+  db-browser-for-sqlite
+  firefox
+  google-chrome
+  gitkraken
+  iterm2
+  local
+  visual-studio-code
+  vlc
+  mu-editor
+  pcloud
+  obsidian
+  slack
+  skitch
+  suspicious-package
+  todoist
+  toggl
+  transmit
+  realforce
+)
+brew install --cask ${apps[@]}
+brew cleanup
+
+# Installing applications via MAS
+apps_mas=(585829637 1278508951 539883307 409183694 409203825 409201541 413857545 1362171212 904801687 508368068 445189367 540404405 405399194 461788075 577085396 1452453066 467040476 1475387142 430798174 1444383602)
+for app_mas in "${apps_mas[@]}"; do
+    install_mas_package "$app_mas"
+done
+
+# System defaults configurations
+
 
 #"Disable 'natural' (Lion-style) scrolling"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
@@ -99,9 +147,6 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write com.apple.terminal StringEncodings -array 4
 defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
-
-# スタンバイまでの時間を24時間へ変更
-$ sudo pmset -a standbydelay 86400
 
 # スクロールバーの常時表示
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
@@ -151,84 +196,11 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # スクリーンショットのファイル名を変更
 defaults write com.apple.screencapture name Screenshot
 
-apps=(
-  atok
-  alfred
-  # airdroid
-  # adobe-creative-cloud
-  appcleaner
-  brave-browser
-  bettertouchtool
-  balenaetcher
-  coteditor
-  chatwork
-  deepl
-  docker
-  dropbox
-  db-browser-for-sqlite
-  firefox
-  google-chrome
-  gitkraken
- # qlmarkdown
- # qlstephen
-  #vagrant
-  iterm2
-  kite
-  local
-  logitech-gaming-software
-  #virtualbox
-  visual-studio-code
-  vlc
-  mu-editor
-  openinterminal-lite
-  pcloud
-  slack
-  # sourcetree
-  # steam
-  skitch
-  spotify
-  #skype
-  sequel-pro
-  suspicious-package
-  todoist
-  toggl
-  transmit
-  realforce
-  # Meld
-  # zoomus
-)
-brew install --cask ${apps[@]}
-brew cleanup
+# スタンバイまでの時間を24時間へ変更
+sudo pmset -a standbydelay 86400 || { echo "Failed to change standby delay"; exit 1; }
 
+# Finder and QuickLook refresh
 killall Finder
 qlmanage -r
 
-apps2=(
-#   405843582  #alfred
-  585829637  #Todoist
-  1278508951 #Trello
-  539883307  #LINE
-  409183694  #keynote
-  409203825  #Numbers
-  409201541  #Pages
-  480452005  #QaLL
-  413857545  #divvy-window-manager
-  1362171212  #caffeinated-anti-sleep-app
-  904801687 #chronosync-express
-  508368068  #get-plain-text
-  445189367  #popclip
-  540404405  #dropshelf
-  405399194  #kindle
-  461788075  #movist
-  577085396  #unclutter
-  918858936  #airmail-4
-  824171161 #affinity-designer
-  1333542190  #1password-7-password-manager
- # 967805235 #paste-clipboard-manager
- # 1225570693 #Ulysses
-  # 1462633284 #perculia
-  1452453066 #hidden-bar
-  467040476 #HiddenMe
-)
-
-mas install ${apps2[@]}
+echo "Setup complete!"
